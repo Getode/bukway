@@ -7,7 +7,7 @@ Author URI: https://movecod.com
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 Tags: legal, business, professional, responsive, clean
-Text Domain: legalease
+Text Domain: BukWay
 */
 /*CSS Reset*/
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
@@ -76,6 +76,9 @@ h3{
 }
 .col-12{
     width:100%;
+}
+.col-2{
+    width:calc((2 * 8.33%) - 30px);
 }
 strong{
     font-weight: bold;
@@ -210,7 +213,7 @@ main a:not(.btn):hover{
     padding:13px 30px 11px;
     line-height: 100%;
     border-radius: 4px;
-    float:right;
+    float: right;
     margin-bottom: 20px;
 }
 .notice::before,
@@ -477,6 +480,9 @@ footer{
     color:#fff;
     font-size:14px;
 }
+.footer__content .row{
+    justify-content: space-between;
+}
 footer a{
     color:#fff;
     display: block;
@@ -493,6 +499,21 @@ footer ul{
 }
 .footer__content .copy{
     color:rgba(255, 255, 255, 0.6)
+}
+.social__links{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((24px + 10px) * 3);
+    gap: 15px;
+    justify-content: center;
+    padding-top:20px;
+    margin-bottom: 15px;
+}
+.social__links > a{
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 0;
 }
 @media (max-width: 1024px) {
     .burger{
@@ -672,7 +693,7 @@ footer ul{
     .footer__content{
         padding:15px;
     }
-    .footer__content .col-3{
+    .footer__content .col-2{
         display: none;
     }
 }
