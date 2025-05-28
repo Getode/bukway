@@ -187,9 +187,9 @@
     <h2 class="text-center">РАССЧИТАЙТЕ БЕСПЛАТНО СТОИМОСТЬ<br> 
         УСЛУГ ДЛЯ ВАШЕГО БИЗНЕСА</h2>
     <form action="">
-        <input type="text" placeholder="Ваше имя">
-        <input type="text" placeholder="Телефон">
-        <input type="text" placeholder="Email">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" placeholder="Телефон" required>
+        <input type="email" placeholder="Email" required>
         <div class="cost__radio-buttons">
             <label for="face-1">
                 <input type="radio" id="face-1" name="face" value="1" checked> ИП
@@ -310,9 +310,9 @@
         <div class="col-6">
             <form action="">
                 <h2>Оставьте заявку</h2>
-                <input type="text" placeholder="Ваше имя">
-                <input type="text" placeholder="Телефон">
-                <input type="text" placeholder="Email">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <input type="email" placeholder="Email" required>
                 <textarea name="" id="" placeholder="Сообщение"></textarea>
                 <button class="btn">Отправить</button>
             </form>
